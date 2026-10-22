@@ -512,6 +512,7 @@
     { "path": "./packages/experimental/hook-protocol" },
     { "path": "./packages/experimental/hooks-claude-code" },
     { "path": "./packages/experimental/hooks-codex" },
+    { "path": "./packages/experimental/omp-gateway" },
     { "path": "./packages/mcp/mcp-client" },
     { "path": "./packages/mcp/mcp-resources" },
     { "path": "./packages/host/directory-picker" },

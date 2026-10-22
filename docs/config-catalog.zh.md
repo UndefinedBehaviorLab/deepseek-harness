@@ -1114,6 +1114,55 @@ export interface InspectorOptions {
 ```
 <!-- END GENERATED config-catalog:@deepseek-ai/dsh-experimental-inspector -->
 
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-experimental-omp-gateway -->
+<a id="deepseek-aidsh-experimental-omp-gateway"></a>
+
+## `@deepseek-ai/dsh-experimental-omp-gateway`
+
+- `inject`: `subprocess`
+- `source`: [`packages/experimental/omp-gateway/src/index.ts:27`](../packages/experimental/omp-gateway/src/index.ts)
+
+```ts config-catalog
+/** Process, readiness, and credential-publication configuration. */
+export interface Config {
+  /** Whether this profile starts and owns the children; false mounts nothing. */
+  enabled?: boolean
+  /** Executable providing the `auth-broker` and `auth-gateway` subcommands. */
+  ompCommand?: string
+  /** Working directory for both children; defaults to the host process cwd. */
+  cwd?: string
+  /** Start `omp auth-broker serve` before the gateway. */
+  startBroker?: boolean
+  /** Broker URL the gateway dials. */
+  brokerUrl?: string
+  /** Bind address for the broker listener. */
+  brokerBind?: string
+  /** Bind address for the gateway listener. */
+  gatewayBind?: string
+  /** Base URL that `llm-pi-ai` routes use; must match {@link gatewayBind}. */
+  gatewayUrl?: string
+  /** omp config root holding the token files; defaults to `PI_CONFIG_DIR` or `~/.omp`. */
+  configDir?: string
+  /** Credential reference that receives the gateway bearer when {@link publishToken} is on. */
+  tokenRef?: string
+  /** Store the gateway bearer in the dsh credential store after readiness. */
+  publishToken?: boolean
+  /** Run `omp auth-gateway check --strict` before serving. */
+  preflight?: 'strict' | 'off'
+  /** Reuse a healthy gateway already listening at {@link gatewayUrl}. */
+  reuseExisting?: boolean
+  /** One health-polling interval. */
+  pollIntervalMs?: number
+  /** Deadline for each readiness probe. */
+  readinessTimeoutMs?: number
+  /** Deadline for the one-shot preflight check. */
+  checkTimeoutMs?: number
+  /** Termination grace handed to the subprocess provider. */
+  graceMs?: number
+}
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-experimental-omp-gateway -->
+
 <!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-experimental-ptc-runtime-python -->
 <a id="deepseek-aidsh-experimental-ptc-runtime-python"></a>
 

@@ -1,0 +1,37 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/omp-gateway/README.md
+/:
+  en: b176fb4d4d18304b
+  zh: a2a690a604790071
+/deepseek-ai-dsh-experimental-omp-gateway:
+  en: 6c68ae69beb1e4c3
+  zh: 9e6d6d479822c433
+/deepseek-ai-dsh-experimental-omp-gateway/summary:
+  en: 87d3c64c62a2b8b4
+  zh: 7126930b67887fb4
+/deepseek-ai-dsh-experimental-omp-gateway/table-of-contents:
+  en: 76368b6b1da79c80
+  zh: 6dc3bbb6f8a9fa8c
+/deepseek-ai-dsh-experimental-omp-gateway/use-this-package:
+  en: cde05e10a1b51bc4
+  zh: f9290e4630264289
+/deepseek-ai-dsh-experimental-omp-gateway/use-this-package/startup-order:
+  en: ea1dd023213b1963
+  zh: e2204305031d3782
+/deepseek-ai-dsh-experimental-omp-gateway/understand-the-implementation:
+  en: 5dfb1d65597629d9
+  zh: 2c047b862ee1e72a
+/deepseek-ai-dsh-experimental-omp-gateway/model-experience:
+  en: cfb98ade1bfef990
+  zh: 0b6dbba5e7a58198
+/deepseek-ai-dsh-experimental-omp-gateway/model-experience/kv-cache-effect:
+  en: c81c71cb86b96b42
+  zh: adde24abb25f34ed
+/deepseek-ai-dsh-experimental-omp-gateway/known-limitations-and-deferred-work:
+  en: ae87d2de5345ec41
+  zh: d344a828f424072c
+/deepseek-ai-dsh-experimental-omp-gateway/known-limitations-and-deferred-work/dev-note:
+  en: 9ea7a7dd1c98df4e
+  zh: 124fe1aab2178b73
